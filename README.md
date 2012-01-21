@@ -1,7 +1,7 @@
 # frigid: a temperature and humidity display
 
-Frigid is an [AVR] program designed to monitor the temperature and humidity of
-the inside of a refrigerator. However, it can be used in just about any
+Frigid is an [Arduino] program designed to monitor the temperature and humidity
+of the inside of a refrigerator. However, it can be used in just about any
 environment.
 
 Frigid displays the temperature and humidity as
@@ -16,6 +16,6 @@ Here's a photo of what the display looks like:
 
 (Averages that have not been computed yet appear as 0.)
 
-[AVR]: http://en.wikipedia.org/wiki/Atmel_AVR
+[Arduino]: http://arduino.cc
 [Moving average]: http://en.wikipedia.org/wiki/Moving_average
 [load average]: http://en.wikipedia.org/wiki/Load_(computing)#Unix-style_load_calculation
