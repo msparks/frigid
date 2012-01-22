@@ -121,7 +121,7 @@ void advanceTime() {
 
 void printAveragesLine(
     const float min_avg, const float hour_avg, const float day_avg) {
-  const int width = 5;  // [-]d.dd
+  const int width = 5;  // [-]dd.d
   const int precision = 1;
   char buffer[width];
 
