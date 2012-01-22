@@ -12,10 +12,10 @@ namespace {
 // LCD connections and properties.
 const int kLcdRsPin = 7;
 const int kLcdEnablePin = 8;
-const int kLcdData4Pin = 9;
-const int kLcdData5Pin = 10;
-const int kLcdData6Pin = 11;
-const int kLcdData7Pin = 12;
+const int kLcdData4Pin = 12;
+const int kLcdData5Pin = 11;
+const int kLcdData6Pin = 10;
+const int kLcdData7Pin = 9;
 
 // LCD size.
 const int kLcdColumns = 16;
@@ -53,6 +53,16 @@ Clock time;
 
 void setup() {
   lcd.begin(kLcdColumns, kLcdRows);
+
+  time.hours = 0;
+  time.minutes = 0;
+  time.seconds = 0;
+
+  lcd.setCursor(0, 0);
+  lcd.print("Initializing...");
+
+  // Wait for the DHT22 to settle.
+  delay(1000);
 }
 
 void loop() {
